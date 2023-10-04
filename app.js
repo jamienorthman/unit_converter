@@ -1,3 +1,5 @@
+import { units } from '/data.js'
+
 const convertBtn = document.getElementById("convert-btn")
 const container = document.getElementById("bottom-part")
 let inputNum = document.getElementById("input-number")
@@ -24,33 +26,6 @@ function renderHTML(title, pName) {
     unitDiv.append(results)
 }
 
-// adding titles, such as "Length (Meter/Feet)", to the units array
-// SSOT:
-const units = [
-    {
-        title: "Length (Meter/Feet)",
-        metric: "meters",
-        imperial: "feet",
-        conversionFactor: 3.281,
-        resultsHTML: "length-results"
-    },
-    
-    {
-        title: "Volume (Liters/Gallons)",
-        metric: "liters",
-        imperial: "gallons",
-        conversionFactor: 0.264,
-        resultsHTML: "volume-results"
-    },
-    
-    {
-        title: "Mass (Kilograms/Pounds)",
-        metric: "kilos",
-        imperial: "pounds",
-        conversionFactor: 2.204,
-        resultsHTML: "mass-results"
-    }
-]
 // rendered html for units and this loop prodcues 3 of them
 // or whatever the amount in the array is
 for (let i = 0; i < units.length; i++) {

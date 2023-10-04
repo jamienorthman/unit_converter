@@ -97,3 +97,13 @@ input::-webkit-inner-spin-button {
     color: white;
     font-size: small;
 }
+
+@media only screen and (max-width: 768px) {
+    #main-container {
+        max-width: 375px;
+    }
+
+    .unit-type {
+        max-width: 300px;
+    }
+}
